@@ -13,14 +13,14 @@ int binary_search(int x, int v[], int n){
     return 0;
 }
 
-int recursive_binary_search(int x, int v[], int p, int u){
-    int i = (p + u) / 2; // i = meio
+int recursive_binary_search(int procurado, int vetor[], int primeiro, int ultimo){
+    int meio = (primeiro + ultimo) / 2;
 
-    if(p > u) return 0; // Não está no vetor
+    if(primeiro > ultimo) return 0; // Não está no vetor
 
-    if(v[i] == x) return 1; // Encontrado
+    if(vetor[meio] == procurado) return 1; // Encontrado
 
-    if(x > v[i]) return recursive_binary_search(x, v, i+1, u); // Se o item procurado é maior que o escolhido atualmente, logo o procurado está à direita
+    if(procurado > vetor[meio]) return recursive_binary_search(procurado, vetor, meio+1, ultimo); // Se o item procurado é maior que o escolhido atualmente, logo o procurado está à direita
     
-    else return recursive_binary_search(x, v, p, i-1); // Se o item procurado é menor que o escolhido atualmente, logo o procurado está à esquerda.
+    else return recursive_binary_search(procurado, vetor, primeiro, meio-1); // Se o item procurado é menor que o escolhido atualmente, logo o procurado está à esquerda.
 }
