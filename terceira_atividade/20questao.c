@@ -14,7 +14,7 @@ int binary_search(int x, int v[], int n){
 }
 
 int recursive_binary_search(int x, int v[], int p, int u){
-    int i = (p + u) / 2;
+    int i = (p + u) / 2; // i = meio
 
     if(p > u) return 0; // Não está no vetor
 

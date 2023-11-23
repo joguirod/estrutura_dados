@@ -1,0 +1,3 @@
+4) A saída será "pilha vazia!", porque inicialmente foram empilhados dois itens na pilha, mas há a ocorrência de três desempilha, na terceira ocorrência já não há nada na pilha.
+
+5) A saída será "pilha cheia!", porque, por se tratar de uma pilha de float, a quantidade número que poderão ser divididos por 2 e serem maior do que 0 é maior do que a capacidade máxima da pilha.

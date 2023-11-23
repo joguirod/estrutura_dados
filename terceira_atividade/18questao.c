@@ -9,7 +9,7 @@ int igual(Lista A, Lista B) {
     if (A == NULL || B == NULL || A->item != B->item) { 
         return 0; // Uma das listas chegou ao final ou os itens são diferentes.
     }
-    return igual(A->prox, B->prox); // caso recursivo, onde vamos acessando o próximo item da lista até satisfazermos o primeiro caso base.
+    return igual(A->prox, B->prox); // caso recursivo, onde vamos acessando o próximo item da lista até satisfazermos o primeiro ou segundo caso base.
 }
 
 int main(){
