@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1700576903 source:c:\users\josé guilherme\desktop\estrutura_dados1\segunda_atividade\segundaatividade\include\pilha.cpp
+
+1700576988 source:c:\users\josé guilherme\desktop\estrutura_dados1\segunda_atividade\segundaatividade\src\pilha.cpp
+	<stdio.h>
+	<iostream>
+	<stdlib.h>
+	<string.h>
+
